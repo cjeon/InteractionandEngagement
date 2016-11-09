@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">Interaction and Engagement</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
+    <string-array name="drawer_array">
+        <item> Placehodler text 0 </item>
+        <item> Placehodler text 1 </item>
+        <item> Placehodler text 2 </item>
+    </string-array>
 </resources>

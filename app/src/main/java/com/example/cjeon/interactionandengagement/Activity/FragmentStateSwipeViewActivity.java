@@ -1,7 +1,10 @@
-package com.example.cjeon.interactionandengagement;
+package com.example.cjeon.interactionandengagement.Activity;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.cjeon.interactionandengagement.Adapter.ExampleFragmentStatePagerAdapter;
+import com.example.cjeon.interactionandengagement.R;
 
 public class FragmentStateSwipeViewActivity extends AppCompatActivity {
     ExampleFragmentStatePagerAdapter exampleFragmentStatePagerAdapter;

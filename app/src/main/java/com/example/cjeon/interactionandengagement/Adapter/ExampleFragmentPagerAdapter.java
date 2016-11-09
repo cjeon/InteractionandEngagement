@@ -1,9 +1,11 @@
-package com.example.cjeon.interactionandengagement;
+package com.example.cjeon.interactionandengagement.Adapter;
 
-import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+
+import com.example.cjeon.interactionandengagement.Fragment.SwipeViewFragment;
 
 public class ExampleFragmentPagerAdapter extends FragmentPagerAdapter {
     public ExampleFragmentPagerAdapter(FragmentManager fragmentManager) {
