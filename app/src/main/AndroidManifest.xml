@@ -35,7 +35,12 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Activity.MainActivity" />
         </activity>
-        <activity android:name=".Activity.FragmentBackActivity"></activity>
+        <activity android:name=".Activity.FragmentBackActivity" />
+        <activity
+            android:name=".Activity.SpecialActivity"
+            android:excludeFromRecents="true"
+            android:taskAffinity="" />
+        <activity android:name=".Activity.NotificationActivity"></activity>
     </application>
 
 </manifest>
