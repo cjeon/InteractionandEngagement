@@ -40,7 +40,10 @@
             android:name=".Activity.SpecialActivity"
             android:excludeFromRecents="true"
             android:taskAffinity="" />
-        <activity android:name=".Activity.NotificationActivity"></activity>
+        <activity android:name=".Activity.NotificationActivity" />
+        <activity
+            android:name=".Activity.SwipeRefreshActivity"
+            android:theme="@style/AppTheme"/>
     </application>
 
 </manifest>

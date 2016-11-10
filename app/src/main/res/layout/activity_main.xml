@@ -93,6 +93,19 @@
                 android:text="Timed Notification"
                 android:onClick="getFixedDurationProgressNotification"/>
 
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Undetermined Notification"
+                android:onClick="getOngoingProgressNotification"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Swipe refresh"
+                android:onClick="openSwipeRefreshActivity"/>
+
+
         </LinearLayout>
 
     </ScrollView>

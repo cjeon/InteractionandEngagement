@@ -6,6 +6,7 @@ import android.app.PendingIntent;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.NotificationCompat;
+import android.support.v4.app.NotificationManagerCompat;
 import android.support.v4.app.TaskStackBuilder;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -179,15 +180,29 @@ public class MainActivity extends AppCompatActivity {
                 .subscribe(
                         percentage -> {
                             timedBuilder.setProgress(60, percentage.intValue(), false);
-                            notificationManager.notify(id, timedBuilder.build());
-                        },
+                            notificationManager.notify(id, timedBuilder.build()); },
                         ignore -> {},
                         () -> {
                             timedBuilder.setProgress(1, 1, false)
                                     .setContentTitle("Done!")
                                     .setContentText("Done!")
                                     .setAutoCancel(true);
-                            notificationManager.notify(id, timedBuilder.build());
-                        });
+                            notificationManager.notify(id, timedBuilder.build()); }
+                );
+    }
+
+    public void getOngoingProgressNotification(View view) {
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(this);
+        builder.setContentTitle("Progress Bar")
+                .setContentTitle("Flow!")
+                .setContentText("We do not know when it's gonna end")
+                .setSmallIcon(R.drawable.ic_schedule_black_24dp)
+                .setProgress(0,0,true);
+        notificationManager.notify(1, builder.build());
+    }
+
+    public void openSwipeRefreshActivity(View view) {
+        Intent intent = new Intent(this, SwipeRefreshActivity.class);
+        startActivity(intent);
     }
 }
