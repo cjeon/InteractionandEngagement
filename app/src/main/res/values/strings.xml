@@ -5,4 +5,5 @@
         <item> Placehodler text 1 </item>
         <item> Placehodler text 2 </item>
     </string-array>
+    <string name="hint">hint</string>
 </resources>

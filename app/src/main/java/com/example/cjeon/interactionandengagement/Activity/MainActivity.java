@@ -205,4 +205,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, SwipeRefreshActivity.class);
         startActivity(intent);
     }
+
+    public void openSearchActivity(View view) {
+        Intent intent = new Intent(this, SearchActivity.class);
+        startActivity(intent);
+    }
 }
